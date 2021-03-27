@@ -22,6 +22,8 @@ class SecondFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        toastBtn.setOnClickListener {
+            Toast.makeText(activity!!, "토스트 버튼", Toast.LENGTH_SHORT).show()
         }
 
     }
